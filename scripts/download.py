@@ -1,5 +1,5 @@
 # The following code is based from https://github.com/akiratwang/MAST30034_Python/tutorials/
-# and modified by Haonan Zhong
+# and modified by Un Leng Kam
 from urllib.request import urlretrieve
 import os
 

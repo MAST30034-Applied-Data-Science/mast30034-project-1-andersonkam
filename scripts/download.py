@@ -13,6 +13,9 @@ URL_TEMPLATE = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_
 
 # data output directory is `data/raw/`
 raw_output_dir = output_relative_dir + 'raw/'
+if not os.path.exists(raw_output_dir):
+    os.makedirs(raw_output_dir)
+    
 for year in YEARS:
     for month in MONTHS:
         month = str(month).zfill(2)

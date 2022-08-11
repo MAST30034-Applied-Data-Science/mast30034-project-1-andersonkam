@@ -132,6 +132,6 @@ dmypy.json
 data/curated/
 data/raw/
 data/taxi_zones/
-
+data/new york 2016-01-01 to 2017.csv
 # OSX .DS_Store file
 .DS_Store

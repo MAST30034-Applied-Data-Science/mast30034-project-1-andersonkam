@@ -9,7 +9,8 @@ ssl._create_default_https_context = ssl._create_unverified_context
 output_relative_dir = '../data/'
 
 YEARS = range(2016, 2018)
-MONTHS = range(1, 13)
+MONTHS_2016 = range(1, 13)
+MONTHS_2017 = range(1, 6)
 
 # this is the URL template of the download destination
 URL_TEMPLATE = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_"
@@ -22,15 +23,27 @@ target_dir = output_relative_dir + 'raw'
 if not os.path.exists(target_dir):
     os.makedirs(target_dir)
 
-for year in YEARS:
-    for month in MONTHS:
-        month = str(month).zfill(2)
-        print(f"Begin year {year} month {month}")
-        # generate url
-        url = f'{URL_TEMPLATE}{year}-{month}.parquet'
-        # generate output location and filename
-        output_filename = f"{target_dir}/{year}-{month}-yellow_taxi.parquet"
-        # download
-        urlretrieve(url, output_filename) 
-        
-        print(f"Completed year {year} month {month}")
+
+for month in MONTHS_2016:
+    month = str(month).zfill(2)
+    print(f"Begin year {2016} month {month}")
+    # generate url
+    url = f'{URL_TEMPLATE}{2016}-{month}.parquet'
+    # generate output location and filename
+    output_filename = f"{target_dir}/{2016}-{month}-yellow_taxi.parquet"
+    # download
+    urlretrieve(url, output_filename) 
+    
+    print(f"Completed year {2016} month {month}")
+
+for month in MONTHS_2017:
+    month = str(month).zfill(2)
+    print(f"Begin year {2017} month {month}")
+    # generate url
+    url = f'{URL_TEMPLATE}{2017}-{month}.parquet'
+    # generate output location and filename
+    output_filename = f"{target_dir}/{2017}-{month}-yellow_taxi.parquet"
+    # download
+    urlretrieve(url, output_filename) 
+    
+    print(f"Completed year {2017} month {month}")

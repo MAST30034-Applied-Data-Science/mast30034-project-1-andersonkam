@@ -7,8 +7,12 @@
 **Timeline:** The timeline for the research area is 2016 January to 2017 May.
 
 ## Dataset
-**TLC trip record data:**  https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page \n
+**TLC trip record data:**  https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 **New York City Weather:** https://www.visualcrossing.com/weather/weather-data-services
+
+
+
+
 
 To run the pipeline, please visit the `scripts` directory and run the files in order:
 1. `download.py`: This downloads the raw data into the `data/raw` directory.

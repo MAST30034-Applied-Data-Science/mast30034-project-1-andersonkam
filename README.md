@@ -2,7 +2,7 @@
 - Name: Un Leng Kam
 - Student ID: 1178863
 
-**Research Goal:** My research goal is predict high value trips given a location and time.
+**Research Goal:** My research goal is predict the number high value trips given a location and time.
 
 **Timeline:** The timeline for the research area is 2016 January to 2017 May.
 
